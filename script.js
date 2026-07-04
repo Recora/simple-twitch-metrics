@@ -11,7 +11,6 @@ const twitchUsername = urlParams.get("username") || '';
 ///////////////
 
 async function UpdateMetrics() {
-    document.getElementById("subCountLabel").innerHTML = await GetMetric("https://decapi.me/twitch/subcount");
     document.getElementById("followerCountLabel").innerHTML = await GetMetric("https://decapi.me/twitch/followcount");
     document.getElementById("viewCountLabel").innerHTML = await GetViewCount();
 
